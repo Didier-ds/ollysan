@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-
+    background-color: #fdf5ed !important;
 }
 .info-box {
     box-shadow: 0 0 30px rgb(214 215 216 / 60%);
@@ -8,6 +8,13 @@ body {
 }
 .logo {
     float: left;
+}
+.intro p {
+    color: #035;
+    padding: 10px;
+    font-family: 'Palanquin Dark';
+    text-indent: 3rem;
+
 }
 nav {
     float: right;
@@ -62,7 +69,7 @@ header {
 }
 .board {
     background-image: url(img/img1.jpg);
-    background-color: #000000d6;
+    background-color: #000000b4;
     background-blend-mode: darken;
    margin: 0px;
     background-size: cover;
@@ -70,19 +77,19 @@ header {
 
 .ref{
     color: black;
-    text-decoration: none;
-    padding: 3px 8px;
+    text-decoration: none !important;
+    padding: 20px 10px;
     font-weight: 400;
     margin: 2px;
-    transition: font-weight 0.3s ease-out;
+    color:#07101f;
+    transition: 0.5s;
     font-family: 'Comfortaa', cursive;
-    border-radius: 0.6em;
-    border: none;
+    
     
 }
 .ref:hover {
-     font-weight: 600;
-     
+       background-color: #eb7e02;
+       color: white;
 }
 ul {
     margin: 0px;
@@ -93,7 +100,7 @@ ul {
 .serv_list {
     box-shadow: 0px 0px 5px 0px #af9451;
     margin: 15px;
-    background-color: goldenrod;
+    background-color: #eb7e02;
     color: white;
     border-radius: 0.6em;
     padding: 25px;
@@ -122,7 +129,7 @@ ul {
 }
 .info-box i {
     font-size: 32px;
-    color: goldenrod;
+    color: #eb7e02;
     border-radius: 50%;
     padding: 8px;
     border: 2px dotted #ffded4;
@@ -146,7 +153,7 @@ header {
 }
 
 .Message .btn, .greetings .btn {
-    background-color: goldenrod;
+    background-color: #eb7e02;
     color: white;
     border-radius: 0px;
     transition: 0.4s;
@@ -154,20 +161,29 @@ header {
 footer input {
     padding: 7px;
     font-size: 20px;
-    color: goldenrod;
-    border: none;
+    color: #eb7e02;
+    border: 2px solid #eb7e02;
+
 }
 footer button {
-    background-color: goldenrod;
+    background-color: #eb7e02;
     color: white;
     border: none;
     padding: 10px;
     border-radius: 0px;
     transition: 0.4s;
+    position: relative;
+    top: -3px;
+    left: 2px;
 }
 footer {
     padding: 30px 0px;
-    background: #ffe00054;
+    background:white;
+    border-top: 1px solid rgba(0, 51, 85, 0.288);
+    color: #eb7e02;
+}
+footer h5 {
+    color: #035;
 }
 footer ul li {
     padding: 10px 0;
@@ -186,7 +202,7 @@ footer ul li i{
 }
 .Message .btn:hover, .greetings .btn:hover {
     background-color:white;
-    color: goldenrod;
+    color: #eb7e02;
     border: 1px solid;
     
 }
