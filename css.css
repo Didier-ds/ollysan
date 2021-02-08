@@ -2,12 +2,48 @@ body {
     margin: 0px;
     background-color: #fdf5ed !important;
 }
+main {
+    padding-top: 70px;
+}
 .info-box {
     box-shadow: 0 0 30px rgb(214 215 216 / 60%);
     padding: 20px;
+    background-color: white;
 }
 .logo {
     float: left;
+}
+ 
+.con-p {
+    font-weight: 700;
+   color:#eb7e02
+}
+#responsive-navbar {
+    background-color: white;
+    color:#07101f;
+    opacity: 0;
+   visibility: hidden;
+   transition: 1s;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    
+}
+
+#responsive-navbar li {
+    display: block;
+    border-bottom: 1px solid #07101f5e;
+    padding: 18px;
+}
+#responsive-navbar a {
+    color:rgba(9, 19, 63, 0.849);
+    text-decoration: none !important;
+    font-size: 16px;
+    padding: 10px;
+}
+#responsive-navbar a.active {
+    font-weight: bolder;
 }
 .intro p {
     color: #035;
@@ -23,6 +59,45 @@ nav {
 #menu {
     display: none;
 }
+.donate {
+    background-color: #eb7e02;
+    color: white;
+   
+}
+.donate h3 {
+  
+}
+
+.abouts h2 , .abouts h3 , #us h3:nth-child(1)  { 
+    font-family: 'Passion One', cursive;
+    color: #eb7e02;
+}
+#us h5 {
+    color:#07101fd0;
+    font-size: 18px;
+    padding: 15px;
+    font-family: 'Palanquin Dark';
+}
+.paragraph {
+    font-family: 'Palanquin Dark';
+    color: #081120;
+}
+.donate .btn {
+   
+    cursor: pointer !important;
+    font-size: 20px;
+    border-radius: 0em;
+    font-weight: bolder;
+    padding: 10px 35px;
+    background-color: white;
+    color:#eb7e02;
+    transition: 0.5s;
+}
+.donate .btn:hover {
+    background-color: #eb7e02;
+    color: white;
+    border: 1px solid white;
+}
 li {
     display: inline;
     margin: 0px 0.2rem;
@@ -30,6 +105,7 @@ li {
 .top-head h3 {
     font-family: 'Palanquin Dark', sans-serif;
    text-align: center;
+   color:#07101f;
 }
 
 .services {
@@ -62,6 +138,9 @@ header {
     background-color: white;
     padding: 30px;
     height: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     box-shadow: 0px 1px 7px 0px;
 }
 .background {
@@ -74,9 +153,17 @@ header {
    margin: 0px;
     background-size: cover;
 }
-
+.active a {
+    background-color: #eb7e02;
+    color: white !important;
+    text-decoration: none !important;
+    padding: 20px 10px;
+    font-weight: 400;
+    margin: 2px;
+    transition: 0.5s;
+    font-family: 'Comfortaa', cursive;
+}
 .ref{
-    color: black;
     text-decoration: none !important;
     padding: 20px 10px;
     font-weight: 400;
@@ -84,13 +171,12 @@ header {
     color:#07101f;
     transition: 0.5s;
     font-family: 'Comfortaa', cursive;
-    
-    
 }
-.ref:hover {
+.ref:hover{
        background-color: #eb7e02;
-       color: white;
+       color: white !important;
 }
+
 ul {
     margin: 0px;
 }
@@ -132,6 +218,7 @@ ul {
     color: #eb7e02;
     border-radius: 50%;
     padding: 8px;
+
     border: 2px dotted #ffded4;
     float: left;
 }
@@ -151,8 +238,17 @@ header {
     top: -27px;
     left: -20px;
 }
-
-.Message .btn, .greetings .btn {
+#responsive-navbar li:last-child {
+    background: #eb7e02;
+    color: white;
+    text-align: center;
+}
+#responsive-navbar li:last-child a{
+    font-weight: bolder;
+    color: white;
+    font-size: 20px;
+}
+.Message .btn, .greetings .btn, .reg:hover {
     background-color: #eb7e02;
     color: white;
     border-radius: 0px;
@@ -179,8 +275,9 @@ footer button {
 footer {
     padding: 30px 0px;
     background:white;
-    border-top: 1px solid rgba(0, 51, 85, 0.288);
+    border-top: 0.5px solid rgb(0 51 85 / 12%);
     color: #eb7e02;
+    
 }
 footer h5 {
     color: #035;
@@ -200,9 +297,9 @@ footer ul li i{
     font-size: 18px;
     line-height: 1;
 }
-.Message .btn:hover, .greetings .btn:hover {
+.Message .btn:hover, .greetings .btn:hover, .reg {
     background-color:white;
-    color: #eb7e02;
+    color: #eb7e02 !important;
     border: 1px solid;
     
 }
@@ -223,9 +320,18 @@ footer ul li i{
 .icon {
     margin-bottom: 20px;
 }
+@media (min-width: 920px) {
+    #responsive-navbar {
+        display: none;
+    }
+    }
+
 @media (max-width: 920px) {
     #nav_list {
         display: none; 
+    }
+    #responsive-navbar {
+       visibility: hidden;
     }
     #menu {
         display: block;
@@ -246,3 +352,85 @@ footer ul li i{
 @media (max-width: 695px){
     
 }
+
+/*modal content*\
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  .reg {
+      
+  }
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white !important;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }

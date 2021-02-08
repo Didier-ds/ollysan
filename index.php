@@ -1,49 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="icofont/icofont.min.css">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href=".css/bootstrap.min.css" type="text/css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="img/logo.png" width="5px"/>
-      </div>
-        <div >
-        
-        <nav id="nav_list">
-            <ul>
-                <li class="links"><a class="ref" href="#">HOME</a></li>
-                <li class="links"><a class="ref" href="#">ABOUT US</a></li>
-                <li class="links"><a class="ref" href="#">CONTACT US</a></li>
-                <li class="links"><a class="ref" href="#">SERVICES</a></li>
-                <li class="links"><a class="ref" href="#">DONATIONS</a></li>
-                <li class="links"><a class="ref" href="#">GALLERY</a></li>
-
-            </ul>
-        </nav>
-        <div id="menu"><img src="img/menu.png"  width="20px"/></div>
-    </div>
-    </header>
+<?php $curr_page = basename(__FILE__); require_once('includes/header.php')?>
+    <main>
     <section class="board">
         
             
@@ -151,24 +107,26 @@ This is an organization that is formed for the development of youths and sports 
         </div>
     </div>
     </section>
-    <section class="section bg-white">
+    
+    <section id="Contact" class="section bg-white">
         <div class="container">
-            <div class="row">
-        <div class="section-title text-center">
-            <div class="service">
-                <div class="container">
-                <div class="row">
+            <div class="row justify-content-around">
+
+                
                 <div class="top-head col-lg-12">
-                    <span><h3>CONTACT US</h3></span>
+                    <span><h3>Contact Us</h3></span>
                 </div>
+                <div class="col-lg-8" >
+                    <p class="mb-4 mt-4 con-p">Are you interested in Knowing more about our sevices
+                        or do you have any questions, or information you would like to know about us?
+                        Please feel free to call the number below or fill the form</p>
                 </div>
             </div>
-             <p>Are you interested in Knowing more about our sevices
-                or do you have any questions, or information you would like to know about us?
-                Please feel free to call the number below or fill the form</p>
-        </div>
+             
+        
             </div>
         </div>
+        
             <div class="container mb-4">
                 <div class="row">
                     <div class="col-lg-4"><div class="info-box"><i class="icofont-location-pin"></i>
@@ -190,9 +148,9 @@ This is an organization that is formed for the development of youths and sports 
                     </div>
                 </div>
                 </div>
+            
             </div>
-            </div>
-        </div>
+        
     <div class= "Message">
         <div class="container">
             <div class="row justify-content-around">
@@ -223,34 +181,5 @@ This is an organization that is formed for the development of youths and sports 
         </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-           <div class="row justify-content-center">
-               <div class="col-lg-4 col-md-12" >
-                    <h5>Ollysan Global Recruit Limited</h5>
-                    <p>Olayiwola Ajani Sports Complex (San Siro), Odan Town off Olosan community,Alaakia,Ibadan Oyo state, Nigeria.</p>
-                    <p><strong>Phone: </strong>+2348133032029</p>
-                    <p><strong>Email: </strong>info@ollysanglobal.com</p>
-               </div>
-               <div class="col-lg-4 col-md-4 text-center">
-                   <h5>Useful Links</h5>
-                   <ul>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                  </ul>
-               </div>
-               <div class="col-lg-4 col-md-6 footer-newsletter">
-                <h5>Join Our Newsletter</h5>
-                <p>Input your email here to subscribe to our Newsletter</p>
-                <form action="" method="post">
-                  <input type="email" name="email"><button>Subscribe</button>               </form>
-              </div>
-           </div>
-        </div>
-    </footer>
-    <script src="main.js"></script>
-</body>
-</html>
+    </main>
+    <?php require_once('includes/footer.php') ?>
